@@ -2,9 +2,9 @@ pipeline {
   environment {
     RANCHER_STACKID = "1st2670"
     RANCHER_ENVID = "1a486860"
-    GIT_NAME = "clms-frontend"
-    registry = "eeacms/clms-frontend"
-    template = "templates/volto-clms"
+    GIT_NAME = "ask-copernicus-frontend"
+    registry = "eeacms/ask-copernicus-frontend"
+    template = "templates/ask-copernicus-clms"
     dockerImage = ''
     tagName = ''
     SONARQUBE_TAG = "ask.copernicus.eu"
