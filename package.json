@@ -1,6 +1,6 @@
 {
-  "name": "clms-frontend",
-  "description": "Volto Frontend for CLMS site",
+  "name": "ask-copernicus-frontend",
+  "description": "Ask Copernicus Frontend for CLMS site",
   "license": "MIT",
   "version": "3.403.0",
   "private": true,
