@@ -43,6 +43,10 @@
       {
         "path": "build/public/static/js/client*.js",
         "maxSize": "1.7MB"
+      },
+      {
+        "path": "build/public/static/js/rehype-prism-plus*.js",
+        "maxSize": "250kB"
       }
     ]
 }
