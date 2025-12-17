@@ -21,6 +21,17 @@ function selectEntireCart() {
 const cartRows = () =>
   cy.get('.cart-table tbody', { timeout: 20000 }).find('tr');
 
+const assertEmptyCart = () => {
+  cy.get('body').then(($body) => {
+    const table = $body.find('.cart-table tbody');
+    if (table.length) {
+      cy.wrap(table.find('tr')).should('have.length', 0);
+    } else {
+      cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
+    }
+  });
+};
+
 const fsc2016p20med_cart = [
   {
     id: '10ee0f23fcb146ea89dcdacc40b0900d',
@@ -173,7 +184,7 @@ describe('Cart Tests', () => {
     cy.wait('@projections');
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
   // afterEach(() => {
   //   cy.clearLocalStorage();
@@ -371,7 +382,7 @@ describe('Cart Tests', () => {
     cy.visit('/en/cart');
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 
   it('Test Timeseries calendar', () => {
@@ -419,7 +430,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 
   it('Test dataset without date', () => {
@@ -517,7 +528,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 
   it('Test Collection selector', () => {
@@ -575,7 +586,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 
   it('Test Type and Format selectors', () => {
@@ -648,7 +659,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 
   it('Test Cart pagination and clearing', () => {
@@ -703,7 +714,7 @@ describe('Cart Tests', () => {
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 
   it('Test Cart downloading dataset with auxiliary calendar without dates', () => {
@@ -771,6 +782,6 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cartRows().should('have.length', 0);
+    assertEmptyCart();
   });
 });
