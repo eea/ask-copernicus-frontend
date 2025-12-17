@@ -382,11 +382,15 @@ Cypress.Commands.add(
       .should('contain', 'Select dates');
     // Open timeseries datepicker
     cy.wrap(subject).eq(0).find('.info-icon').eq(0).find('button').click();
-    cy.wait(100);
+    cy.get('.react-datepicker', { timeout: 10000 }).should('be.visible');
 
     //select year and month
-    cy.get('select.react-datepicker__year-select').select('2024');
-    cy.get('select.react-datepicker__month-select').select('3');
+    cy.get('select.react-datepicker__year-select', { timeout: 10000 }).select(
+      '2024',
+    );
+    cy.get('select.react-datepicker__month-select', { timeout: 10000 }).select(
+      '3',
+    );
 
     // select a 8 days range
     cy.get('.react-datepicker__month .react-datepicker__week')
