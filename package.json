@@ -167,12 +167,12 @@
     "react-slick": "0.28.1",
     "@plone/scripts": "^3.3.2",
     "countup.js": "2.6.0",
-    "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#e6d32c465c53ebf548771e034a058cb440477dd1"
+    "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
   },
   "dependencies": {
     "@eeacms/volto-arcgis-block": "0.1.418",
     "@eeacms/volto-chatbot": "0.5.4",
-    "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#e6d32c465c53ebf548771e034a058cb440477dd1",
+    "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus",
     "@eeacms/volto-clms-utils": "0.1.15",
     "@eeacms/volto-eea-kitkat": "28.1.1",
     "@eeacms/volto-sentry-rancher-config": "5.0.0",
