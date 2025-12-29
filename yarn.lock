@@ -2159,7 +2159,7 @@ __metadata:
     volto-cookie-banner: 2.1.0
     volto-dropdownmenu: 4.0.0
     volto-form-block: 3.1.0
-  checksum: 87818e8542cfbb690e55493564dbb547226b31492f088df06775ad1e9f4c2223569b2fbb3a70b58b3bfd458c2f8e23fe2ff3dd5ab545ed154b0d0c27f22523e9
+  checksum: de68a5cb919f0eacc0bec5104cf6872f6ade8526aa00be898faace1379db387626ff44d005287da00179613aea2acab2de52f0c06f74e01b8e856fb2660d42f5
   languageName: node
   linkType: hard
 
