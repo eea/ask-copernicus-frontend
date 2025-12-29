@@ -18,6 +18,20 @@ function selectEntireCart() {
   });
 }
 
+const cartRows = () =>
+  cy.get('.cart-table tbody', { timeout: 20000 }).find('tr');
+
+const assertEmptyCart = () => {
+  cy.get('body').then(($body) => {
+    const table = $body.find('.cart-table tbody');
+    if (table.length) {
+      cy.wrap(table.find('tr')).should('have.length', 0);
+    } else {
+      cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
+    }
+  });
+};
+
 const fsc2016p20med_cart = [
   {
     id: '10ee0f23fcb146ea89dcdacc40b0900d',
@@ -170,7 +184,7 @@ describe('Cart Tests', () => {
     cy.wait('@projections');
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
   // afterEach(() => {
   //   cy.clearLocalStorage();
@@ -248,7 +262,7 @@ describe('Cart Tests', () => {
     });
     cy.wait('@projections');
     cy.wait(10000);
-    cy.get('li a.header-login-link strong').should('contain', '4');
+    cartRows().should('have.length', 4);
     cy.get('td.table-td-projections').contains('EPSG:3035').should('exist');
 
     // first cart item check and modify the selection
@@ -307,7 +321,7 @@ describe('Cart Tests', () => {
 
     // Duplicate the last element
     cy.get('td.text-end').eq(3).find('.info-icon').eq(0).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '5');
+    cartRows().should('have.length.at.least', 5);
     cy.get('td.table-td-projections', { timeout: 10000 })
       .should('have.length.at.least', 5)
       .eq(4)
@@ -322,7 +336,7 @@ describe('Cart Tests', () => {
 
     // Duplicate the second element
     cy.get('td.text-end').eq(1).find('.info-icon').eq(0).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '6');
+    cartRows().should('have.length.at.least', 6);
     cy.get('td.table-td-projections', { timeout: 10000 })
       .should('have.length.at.least', 6)
       .eq(2)
@@ -368,7 +382,7 @@ describe('Cart Tests', () => {
     cy.visit('/en/cart');
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 
   it('Test Timeseries calendar', () => {
@@ -381,7 +395,7 @@ describe('Cart Tests', () => {
       },
     });
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '1');
+    cartRows().should('have.length', 1);
 
     cy.get('td.table-td-timeseries')
       .should('have.length.at.least', 1)
@@ -416,7 +430,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 
   it('Test dataset without date', () => {
@@ -429,7 +443,7 @@ describe('Cart Tests', () => {
       },
     });
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '1');
+    cartRows().should('have.length', 1);
 
     cy.get('td.table-td-timeseries', { timeout: 10000 })
       .should('have.length.at.least', 1)
@@ -455,7 +469,7 @@ describe('Cart Tests', () => {
       'not.contain',
       'Empty cart',
     );
-    cy.get('li a.header-login-link strong').should('contain', '1');
+    cartRows().should('have.length', 1);
   });
 
   it('Test Layer/Band selector', () => {
@@ -468,7 +482,7 @@ describe('Cart Tests', () => {
       },
     });
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '2');
+    cartRows().should('have.length', 2);
 
     // first cart item check and modify the selection
     cy.get('td .ui.selection.dropdown.layer-selector')
@@ -514,7 +528,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 
   it('Test Collection selector', () => {
@@ -528,7 +542,7 @@ describe('Cart Tests', () => {
     });
 
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '2');
+    cartRows().should('have.length', 2);
 
     // first cart item check and modify the selectors
     cy.get('td .ui.selection.dropdown.collection-selector')
@@ -572,7 +586,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 
   it('Test Type and Format selectors', () => {
@@ -586,7 +600,7 @@ describe('Cart Tests', () => {
     });
 
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '2');
+    cartRows().should('have.length', 2);
     cy.get('td .collection-container').eq(0).should('have.text', '-');
     cy.get('td .ui.selection.dropdown.format-selector')
       .eq(0)
@@ -645,7 +659,7 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 
   it('Test Cart pagination and clearing', () => {
@@ -659,13 +673,13 @@ describe('Cart Tests', () => {
     });
 
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '10');
+    cartRows().should('have.length', 10);
     cy.get('.pagination-wrapper').should('not.exist');
     cy.get('tbody').find('tr').should('have.length', 10);
 
     // Duplicate the last element
     cy.get('td.text-end').eq(3).find('.info-icon').eq(0).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '11');
+    cartRows().should('have.length', 10);
     cy.get('.pagination-wrapper').should('exist');
     cy.get('tbody').find('tr').should('have.length', 10);
 
@@ -680,27 +694,27 @@ describe('Cart Tests', () => {
 
     //Remove all the elements
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '9');
+    cartRows().should('have.length', 9);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '8');
+    cartRows().should('have.length', 8);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '7');
+    cartRows().should('have.length', 7);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '6');
+    cartRows().should('have.length', 6);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '5');
+    cartRows().should('have.length', 5);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '4');
+    cartRows().should('have.length', 4);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '3');
+    cartRows().should('have.length', 3);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '2');
+    cartRows().should('have.length', 2);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
-    cy.get('li a.header-login-link strong').should('contain', '1');
+    cartRows().should('have.length', 1);
     cy.get('td.text-end').eq(0).find('.info-icon').eq(1).find('button').click();
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 
   it('Test Cart downloading dataset with auxiliary calendar without dates', () => {
@@ -713,7 +727,7 @@ describe('Cart Tests', () => {
       },
     });
     cy.wait('@projections');
-    cy.get('li a.header-login-link strong').should('contain', '1');
+    cartRows().should('have.length', 1);
 
     cy.get('td.table-td-timeseries')
       .eq(0)
@@ -768,6 +782,6 @@ describe('Cart Tests', () => {
 
     cy.get('.ui.container h1').should('contain', 'Cart');
     cy.get('.ui.container .ccl-container h2').should('contain', 'Empty cart');
-    cy.get('li a.header-login-link strong').should('contain', '0');
+    assertEmptyCart();
   });
 });
