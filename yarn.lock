@@ -2110,13 +2110,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-chatbot@npm:0.5.4":
-  version: 0.5.4
-  resolution: "@eeacms/volto-chatbot@npm:0.5.4"
+"@eeacms/volto-chatbot@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@eeacms/volto-chatbot@npm:1.0.3"
   dependencies:
     "@eeacms/volto-matomo": "*"
     "@microsoft/fetch-event-source": 2.0.1
-    "@plone-collective/volto-sentry": 0.3.1
+    "@plone-collective/volto-sentry": "*"
     fast-json-patch: 3.1.1
     highlight.js: 11.10.0
     luxon: 3.5.0
@@ -2127,7 +2127,7 @@ __metadata:
     rehype-prism-plus: 1.6.0
     remark-gfm: 3.0.1
     uuid: 10.0.0
-  checksum: 731f5b6b233017f5d049cd3453ec92d968efadc118a50816230e6d4a60a62bc9527802e1194c7a24d90ca8fe147023f088fcc2303a36469f4fd8c0614a880fb3
+  checksum: b5775024db81f5eaec51781a69203919baf3cf3bdcce3c79c01f9d37b387338cbf6ee4e23b2a9dabfb1c57160621c378a4b3fefc5c64a8aaeb2cdc224c84050f
   languageName: node
   linkType: hard
 
@@ -2169,7 +2169,7 @@ __metadata:
     volto-cookie-banner: 2.1.0
     volto-dropdownmenu: 4.0.0
     volto-form-block: 3.1.0
-  checksum: b6b6fd932fc978b490cff20c76767c55a180372740d7f62ae812d981853414308704a0faee8185420630b9061e7e948c2e0d509b8a80b2c64c1e95ef402a60ba
+  checksum: 95474d7ca417872760d7e109aeb8412a9a14a599791d78b72cb2b632bc040154c975a8b1f459e3d06994e2b31b3cefe416f62a55fc6c5cb1b562331ca3e96be7
   languageName: node
   linkType: hard
 
@@ -4015,6 +4015,18 @@ __metadata:
   version: 0.1.2
   resolution: "@pkgr/core@npm:0.1.2"
   checksum: 5160ec9f2e3232da681824a42583ef80e637ae6143339bd1db176848efd244dd71d177ccb7fd729261d8dcaf88486ce701d39500d873ed5caf16e8c281e9e28a
+  languageName: node
+  linkType: hard
+
+"@plone-collective/volto-sentry@npm:*":
+  version: 0.4.0
+  resolution: "@plone-collective/volto-sentry@npm:0.4.0"
+  dependencies:
+    "@sentry/browser": 7.15.0
+    "@sentry/integrations": 7.15.0
+    "@sentry/node": 7.15.0
+    "@sentry/webpack-plugin": 1.19.1
+  checksum: db8660ac3a82320d917222e940842479f2aa2945f3e6b8614d40fc12f96b5b4eb997fb4ab92ab7087492ec0cbb653b65fd2ee0f6f37d39ad5125e9c37c233c49
   languageName: node
   linkType: hard
 
@@ -8494,7 +8506,7 @@ __metadata:
   resolution: "ask-copernicus-frontend@workspace:."
   dependencies:
     "@eeacms/volto-arcgis-block": 0.1.418
-    "@eeacms/volto-chatbot": 0.5.4
+    "@eeacms/volto-chatbot": 1.0.3
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-kitkat": 28.1.1
