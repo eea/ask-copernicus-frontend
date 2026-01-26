@@ -2110,9 +2110,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-chatbot@npm:1.0.7":
-  version: 1.0.7
-  resolution: "@eeacms/volto-chatbot@npm:1.0.7"
+"@eeacms/volto-chatbot@npm:1.0.8":
+  version: 1.0.8
+  resolution: "@eeacms/volto-chatbot@npm:1.0.8"
   dependencies:
     "@eeacms/volto-matomo": "*"
     "@microsoft/fetch-event-source": 2.0.1
@@ -2127,7 +2127,7 @@ __metadata:
     rehype-prism-plus: 1.6.0
     remark-gfm: 3.0.1
     uuid: 10.0.0
-  checksum: 922fc1e9e7d22a1cad190a66b27b42c5a9614477409010aa6f4fe37a9d4b2c5b99097a5b415a9046e22ea7b6a6bd2ec6e40e7b1d389e968f3a58806c69fd715c
+  checksum: f3cfbfefb4dfd3bad243bdebe455e6077009139ea2f88fbbdbe95862e157d99a5a14d6327067063216881b322514e6b8f8f0bc1c2e802f343abbda8328512676
   languageName: node
   linkType: hard
 
@@ -8506,7 +8506,7 @@ __metadata:
   resolution: "ask-copernicus-frontend@workspace:."
   dependencies:
     "@eeacms/volto-arcgis-block": 0.1.420
-    "@eeacms/volto-chatbot": 1.0.7
+    "@eeacms/volto-chatbot": 1.0.8
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-kitkat": 28.1.1
