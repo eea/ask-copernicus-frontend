@@ -2,7 +2,7 @@
   "name": "ask-copernicus-frontend",
   "description": "Ask Copernicus Frontend for CLMS site",
   "license": "MIT",
-  "version": "3.404.0",
+  "version": "3.405.0",
   "private": true,
   "workspaces": [
     "src/addons/*"
