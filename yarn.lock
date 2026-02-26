@@ -2100,27 +2100,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-chatbot@npm:1.0.8":
-  version: 1.0.8
-  resolution: "@eeacms/volto-chatbot@npm:1.0.8"
-  dependencies:
-    "@eeacms/volto-matomo": "*"
-    "@microsoft/fetch-event-source": 2.0.1
-    "@plone-collective/volto-sentry": "*"
-    fast-json-patch: 3.1.1
-    highlight.js: 11.10.0
-    luxon: 3.5.0
-    marked: 13.0.3
-    node-fetch: 2.7.0
-    react-markdown: 8.0.7
-    react-textarea-autosize: ^8.5.3
-    rehype-prism-plus: 1.6.0
-    remark-gfm: 3.0.1
-    uuid: 10.0.0
-  checksum: f3cfbfefb4dfd3bad243bdebe455e6077009139ea2f88fbbdbe95862e157d99a5a14d6327067063216881b322514e6b8f8f0bc1c2e802f343abbda8328512676
-  languageName: node
-  linkType: hard
-
 "@eeacms/volto-clms-theme@github:eea/volto-clms-theme#ask_copernicus":
   version: 1.1.229
   resolution: "@eeacms/volto-clms-theme@https://github.com/eea/volto-clms-theme.git#commit=e7523ce39d857847472710deb76c935b1f7d88f4"
@@ -2159,7 +2138,7 @@ __metadata:
     volto-cookie-banner: 2.1.0
     volto-dropdownmenu: 4.0.0
     volto-form-block: 3.1.0
-  checksum: 95474d7ca417872760d7e109aeb8412a9a14a599791d78b72cb2b632bc040154c975a8b1f459e3d06994e2b31b3cefe416f62a55fc6c5cb1b562331ca3e96be7
+  checksum: b6b6fd932fc978b490cff20c76767c55a180372740d7f62ae812d981853414308704a0faee8185420630b9061e7e948c2e0d509b8a80b2c64c1e95ef402a60ba
   languageName: node
   linkType: hard
 
@@ -8518,7 +8497,6 @@ __metadata:
   resolution: "ask-copernicus-frontend@workspace:."
   dependencies:
     "@eeacms/volto-arcgis-block": 0.1.430
-    "@eeacms/volto-chatbot": 1.0.8
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-chatbot": ^1.0.11
