@@ -2,7 +2,7 @@
   "name": "ask-copernicus-frontend",
   "description": "Ask Copernicus Frontend for CLMS site",
   "license": "MIT",
-  "version": "3.405.0",
+  "version": "3.406.0",
   "private": true,
   "workspaces": [
     "src/addons/*"
@@ -15,7 +15,6 @@
     "@eeacms/volto-widget-geolocation",
     "@eeacms/volto-sentry-rancher-config",
     "@eeacms/volto-clms-theme",
-    "@eeacms/volto-chatbot",
     "@eeacms/volto-eea-chatbot"
   ],
   "scripts": {
@@ -172,11 +171,10 @@
   },
   "dependencies": {
     "@eeacms/volto-arcgis-block": "0.1.430",
-    "@eeacms/volto-chatbot": "1.0.8",
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus",
     "@eeacms/volto-clms-utils": "0.1.15",
     "@eeacms/volto-eea-chatbot": "^1.0.11",
-    "@eeacms/volto-eea-kitkat": "32.0.1",
+    "@eeacms/volto-eea-kitkat": "32.0.2",
     "@eeacms/volto-sentry-rancher-config": "5.0.0",
     "@plone/volto": "17.22.0",
     "friendly-challenge": "0.9.18",
