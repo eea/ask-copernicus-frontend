@@ -1974,6 +1974,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eeacms/volto-anchors@npm:*":
+  version: 2.0.0
+  resolution: "@eeacms/volto-anchors@npm:2.0.0"
+  dependencies:
+    github-slugger: 1.4.0
+  checksum: f0917902485f9c6d39c739cd4afe1187ae986f50bcc6c2470b3b9f0c2ef3335b0d678f941c9311ceebb443653d46c2e6d45575fe351916286ff6b3a25eaaf9b2
+  languageName: node
+  linkType: hard
+
 "@eeacms/volto-anchors@npm:1.0.1":
   version: 1.0.1
   resolution: "@eeacms/volto-anchors@npm:1.0.1"
@@ -1999,9 +2008,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-arcgis-block@npm:0.1.439":
-  version: 0.1.439
-  resolution: "@eeacms/volto-arcgis-block@npm:0.1.439"
+"@eeacms/volto-arcgis-block@npm:0.1.440":
+  version: 0.1.440
+  resolution: "@eeacms/volto-arcgis-block@npm:0.1.440"
   dependencies:
     "@eeacms/volto-clms-utils": ^0.1.13
     "@eeacms/volto-taxonomy": 5.1.0
@@ -2012,7 +2021,7 @@ __metadata:
     highcharts: ^9.3.2
     highcharts-react-official: ^3.1.0
     react-datepicker: 4.15.0
-  checksum: ad198912c3a019e57a55e96048d53115f2923c9e6c69c4fbe12795844f474f42954c7de1b6aa60feeb1dcf5c69225b0ec8eb05710c442d152d90b73dd0026292
+  checksum: 55dd6d9e00cb3891b422f14c0b47a562499a03a7c8eb2f5994730d699287e5cfe40cf05fda3370c318b301dd7d741e3b5fdcfbfcf287a9f6f20bb40c3a529355
   languageName: node
   linkType: hard
 
@@ -2402,10 +2411,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-object-widget@npm:8.0.0":
-  version: 8.0.0
-  resolution: "@eeacms/volto-object-widget@npm:8.0.0"
-  checksum: 9a8bd7ef8bf4ea78c2fb549b200ed86b7d08bf3991bbfcc9c3439c5b3bedd335733b8e07ba0e62f1da4d9db452d65e0c0e72e3f7b0e36a06a7374d0dea2f2f6a
+"@eeacms/volto-object-widget@npm:9.0.0":
+  version: 9.0.0
+  resolution: "@eeacms/volto-object-widget@npm:9.0.0"
+  checksum: d9275b975900e9845515ce30081929a5be9e8e42008b08fbdc0c6fda8b01a74a2daf56aa959d0e55d3693310cecc8fb92508bb59878ab2386e723ae8a3cef939
   languageName: node
   linkType: hard
 
@@ -2513,15 +2522,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-tabs-block@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@eeacms/volto-tabs-block@npm:3.0.1"
+"@eeacms/volto-tabs-block@npm:10.0.0":
+  version: 10.0.0
+  resolution: "@eeacms/volto-tabs-block@npm:10.0.0"
   dependencies:
+    "@eeacms/volto-anchors": "*"
     "@eeacms/volto-block-style": "*"
     react-responsive-tabs: 4.4.3
-    react-slick: ^0.24.0
+    react-slick: ^0.30.1
     slick-carousel: ^1.8.1
-  checksum: 9195e032ee54f6f4e8db086e77fa6e6818b2ef6be3e4f5d2f0a77cb606cbb692b46cec4e4225433d5b6bd980c7087fa32fb15be210e8a12b5ae93d3ad9eeb677
+  checksum: 086702f151c55ebf3278f9fef667f187d687261b814e04b8c5f3d4ae48bba9af18efda2d7e1f9123df8f6ae2c575de9efc4c4e7483a84b6c8c30d1755f371fdd
   languageName: node
   linkType: hard
 
@@ -8503,7 +8513,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ask-copernicus-frontend@workspace:."
   dependencies:
-    "@eeacms/volto-arcgis-block": 0.1.439
+    "@eeacms/volto-arcgis-block": 0.1.440
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-chatbot": ^1.0.11
