@@ -2411,10 +2411,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-object-widget@npm:9.0.0":
-  version: 9.0.0
-  resolution: "@eeacms/volto-object-widget@npm:9.0.0"
-  checksum: d9275b975900e9845515ce30081929a5be9e8e42008b08fbdc0c6fda8b01a74a2daf56aa959d0e55d3693310cecc8fb92508bb59878ab2386e723ae8a3cef939
+"@eeacms/volto-object-widget@npm:9.0.1":
+  version: 9.0.1
+  resolution: "@eeacms/volto-object-widget@npm:9.0.1"
+  checksum: 49febb916b64d77d9984ad52b49254723caca3acf3c2c129df94e677095a2d275862b9294362db3044f8a1645b559ba92d7a570491aff9eed4713b28a89ddb26
   languageName: node
   linkType: hard
 
@@ -2467,10 +2467,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-sentry-rancher-config@npm:6.0.0":
-  version: 6.0.0
-  resolution: "@eeacms/volto-sentry-rancher-config@npm:6.0.0"
-  checksum: 35321d82207801f857d31920c8c25bbe763a0a4822b332fd010b91d0577aa09b8fed663f8804ef7081f02d7dfc409d6d24db0e993e536c70789a4bc87969e282
+"@eeacms/volto-sentry-rancher-config@npm:6.0.1":
+  version: 6.0.1
+  resolution: "@eeacms/volto-sentry-rancher-config@npm:6.0.1"
+  checksum: 851731c1c4231816b9fea0d4253b7aa28589f8a67e4e71bf39425ab053173545837e138bb2ce5041ce64f41b2c9696dacc4d97c6f90dcda9771431f4dac400d3
   languageName: node
   linkType: hard
 
@@ -8518,7 +8518,7 @@ __metadata:
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-chatbot": ^1.0.11
     "@eeacms/volto-eea-kitkat": 32.0.2
-    "@eeacms/volto-sentry-rancher-config": 6.0.0
+    "@eeacms/volto-sentry-rancher-config": 6.0.1
     "@plone/scripts": ^3.3.2
     "@plone/volto": 17.22.0
     "@storybook/addon-actions": ^6.3.0
