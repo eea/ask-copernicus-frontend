@@ -2019,9 +2019,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-arcgis-block@npm:0.1.442":
-  version: 0.1.442
-  resolution: "@eeacms/volto-arcgis-block@npm:0.1.442"
+"@eeacms/volto-arcgis-block@npm:0.1.443":
+  version: 0.1.443
+  resolution: "@eeacms/volto-arcgis-block@npm:0.1.443"
   dependencies:
     "@eeacms/volto-clms-utils": ^0.1.13
     "@eeacms/volto-taxonomy": 5.1.0
@@ -2032,7 +2032,7 @@ __metadata:
     highcharts: ^9.3.2
     highcharts-react-official: ^3.1.0
     react-datepicker: 4.15.0
-  checksum: 7fa21166cd02a8e7dcf9fcdec890aebb8eaffe5a19031c3cd9b32c2f768b6c19d3092c125aa15a45062999217d9cba4bd85abe0d4774f80d5e4ad5ac576e4781
+  checksum: 4c25b972d741c616be06a485fbee390cd6559d707711a8d9cc317d5241f4732bb25ba47480822091aa54cca0929a13a079b3d307a3da667e68fb9d772811c9b2
   languageName: node
   linkType: hard
 
@@ -8554,7 +8554,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ask-copernicus-frontend@workspace:."
   dependencies:
-    "@eeacms/volto-arcgis-block": 0.1.442
+    "@eeacms/volto-arcgis-block": 0.1.443
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-chatbot": ^1.0.11
