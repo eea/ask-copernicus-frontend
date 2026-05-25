@@ -156,7 +156,7 @@
     "node": "^18 || ^20"
   },
   "resolutions": {
-    "@eeacms/volto-tabs-block": "^8.1.0",
+    "@eeacms/volto-tabs-block": "^5.1.0",
     "@eeacms/volto-eea-kitkat": "^24.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -176,7 +176,7 @@
     "@eeacms/volto-eea-chatbot": "2.0.3",
     "@eeacms/volto-eea-kitkat": "^24.0.1",
     "@eeacms/volto-sentry-rancher-config": "6.0.1",
-    "@eeacms/volto-tabs-block": "^8.1.0",
+    "@eeacms/volto-tabs-block": "^5.1.0",
     "@plone/volto": "17.22.0",
     "friendly-challenge": "0.9.18",
     "levenary": "1.1.1",
