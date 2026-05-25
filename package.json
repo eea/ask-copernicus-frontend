@@ -157,7 +157,7 @@
   },
   "resolutions": {
     "@eeacms/volto-object-widget": "9.1.1",
-    "@eeacms/volto-tabs-block": "^9.0.3",
+    "@eeacms/volto-tabs-block": "^8.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-colorscales": "github:eea/react-colorscales#1.0.2",
@@ -176,7 +176,7 @@
     "@eeacms/volto-eea-chatbot": "2.0.3",
     "@eeacms/volto-eea-kitkat": "33.0.4",
     "@eeacms/volto-sentry-rancher-config": "6.0.1",
-    "@eeacms/volto-tabs-block": "^9.0.3",
+    "@eeacms/volto-tabs-block": "^8.1.0",
     "@plone/volto": "17.22.0",
     "friendly-challenge": "0.9.18",
     "levenary": "1.1.1",
