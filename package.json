@@ -157,7 +157,7 @@
   },
   "resolutions": {
     "@eeacms/volto-tabs-block": "^5.1.0",
-    "@eeacms/volto-eea-kitkat": "^28.1.1",
+    "@eeacms/volto-eea-kitkat": "33.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-colorscales": "github:eea/react-colorscales#1.0.2",
@@ -172,11 +172,11 @@
   },
   "dependencies": {
     "@eeacms/volto-arcgis-block": "0.1.451",
+    "@eeacms/volto-chatbot": "2.0.3",
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus",
     "@eeacms/volto-clms-utils": "0.1.15",
     "@eeacms/volto-eea-chatbot": "2.0.3",
-    "@eeacms/volto-chatbot": "2.0.3",
-    "@eeacms/volto-eea-kitkat": "^28.1.1",
+    "@eeacms/volto-eea-kitkat": "33.0.4",
     "@eeacms/volto-sentry-rancher-config": "6.0.1",
     "@eeacms/volto-tabs-block": "^5.1.0",
     "@plone/volto": "17.22.0",
