@@ -9,9 +9,7 @@ pipeline {
   }
 
  agent any
-
   stages {
-
     stage('Integration tests') {
       parallel {
         // stage('Run Cypress: @eeacms/volto-*') {
