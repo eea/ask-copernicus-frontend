@@ -2,7 +2,7 @@
   "name": "ask-copernicus-frontend",
   "description": "Ask Copernicus Frontend for CLMS site",
   "license": "MIT",
-  "version": "3.408.0",
+  "version": "3.409.0",
   "private": true,
   "workspaces": [
     "src/addons/*"
@@ -11,8 +11,6 @@
   "addons": [
     "@eeacms/volto-eea-kitkat",
     "@eeacms/volto-arcgis-block",
-    "@eeacms/volto-block-style",
-    "@eeacms/volto-widget-geolocation",
     "@eeacms/volto-sentry-rancher-config",
     "@eeacms/volto-clms-theme",
     "@eeacms/volto-eea-chatbot"
@@ -157,7 +155,7 @@
   },
   "resolutions": {
     "@eeacms/volto-tabs-block": "^5.1.0",
-    "@eeacms/volto-eea-kitkat": "^28.1.1",
+    "@eeacms/volto-eea-kitkat": "33.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-colorscales": "github:eea/react-colorscales#1.0.2",
@@ -167,7 +165,6 @@
     "react-slick": "0.28.1",
     "@plone/scripts": "^3.3.2",
     "countup.js": "2.6.0",
-    "@eeacms/volto-chatbot": "2.0.3",
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
   },
   "dependencies": {
@@ -175,8 +172,7 @@
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus",
     "@eeacms/volto-clms-utils": "0.1.15",
     "@eeacms/volto-eea-chatbot": "2.0.3",
-    "@eeacms/volto-chatbot": "2.0.3",
-    "@eeacms/volto-eea-kitkat": "^28.1.1",
+    "@eeacms/volto-eea-kitkat": "33.0.4",
     "@eeacms/volto-sentry-rancher-config": "6.0.1",
     "@eeacms/volto-tabs-block": "^5.1.0",
     "@plone/volto": "17.22.0",
