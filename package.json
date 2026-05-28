@@ -168,7 +168,7 @@
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
   },
   "dependencies": {
-    "@eeacms/volto-arcgis-block": "0.1.451",
+    "@eeacms/volto-arcgis-block": "0.1.452",
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus",
     "@eeacms/volto-clms-utils": "0.1.15",
     "@eeacms/volto-eea-chatbot": "2.0.3",
