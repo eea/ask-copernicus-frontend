@@ -173,7 +173,7 @@
     "@eeacms/volto-clms-utils": "0.1.15",
     "@eeacms/volto-eea-chatbot": "2.0.4",
     "@eeacms/volto-eea-kitkat": "33.0.5",
-    "@eeacms/volto-sentry-rancher-config": "6.0.1",
+    "@eeacms/volto-sentry-rancher-config": "6.0.2",
     "@eeacms/volto-tabs-block": "^5.1.0",
     "@plone/volto": "17.22.0",
     "friendly-challenge": "0.9.18",
