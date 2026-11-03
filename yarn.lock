@@ -2513,6 +2513,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@eeacms/volto-sentry-rancher-config@npm:6.0.4":
+  version: 6.0.4
+  resolution: "@eeacms/volto-sentry-rancher-config@npm:6.0.4"
+  checksum: 7d473d586f980f2e89164b651cf8d279fce8fcdaa9b98a8c1d3db7f1af22a2569c077d23f57ca6174a9826f7e626cce2ec2994a2644ca19582b2bd280df9c291
+  languageName: node
+  linkType: hard
+
 "@eeacms/volto-slate-footnote@npm:*":
   version: 7.2.6
   resolution: "@eeacms/volto-slate-footnote@npm:7.2.6"
@@ -8614,7 +8621,7 @@ __metadata:
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-chatbot": 4.1.6
     "@eeacms/volto-eea-kitkat": 33.2.3
-    "@eeacms/volto-sentry-rancher-config": 6.0.3
+    "@eeacms/volto-sentry-rancher-config": 6.0.4
     "@eeacms/volto-tabs-block": ^5.1.0
     "@plone/scripts": ^3.3.2
     "@plone/volto": 17.22.0
