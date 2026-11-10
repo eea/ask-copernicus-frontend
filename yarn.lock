@@ -2273,9 +2273,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-eea-kitkat@npm:34.0.2":
-  version: 34.0.2
-  resolution: "@eeacms/volto-eea-kitkat@npm:34.0.2"
+"@eeacms/volto-eea-kitkat@npm:34.0.3":
+  version: 34.0.3
+  resolution: "@eeacms/volto-eea-kitkat@npm:34.0.3"
   dependencies:
     "@eeacms/countup": 3.0.1
     "@eeacms/volto-accordion-block": 13.1.1
@@ -2300,7 +2300,7 @@ __metadata:
     "@eeacms/volto-object-widget": 9.1.1
     "@eeacms/volto-quote-block": 4.0.1
     "@eeacms/volto-resize-helper": 3.0.1
-    "@eeacms/volto-sentry-rancher-config": 6.0.4
+    "@eeacms/volto-sentry-rancher-config": 6.0.5
     "@eeacms/volto-slate-footnote": 8.0.2
     "@eeacms/volto-slate-label": 2.0.1
     "@eeacms/volto-slate-metadata-mentions": 9.0.1
@@ -2317,7 +2317,7 @@ __metadata:
     "@eeacms/volto-widget-theme-picker": 3.0.1
     "@eeacms/volto-widget-toggle": 5.0.1
     "@plone-collective/volto-sentry": 1.0.1
-  checksum: d349797c264e0e3ed6ebb4adb556f3990c407d8772d0383a53a742233c91897f6d9e6ce160675f17d98872219c7a367d6e2f9277765af2c52c125cfd0cf762e4
+  checksum: 0cbbdd95c609207d335ddeb62d8ce48dd431e33202a700130b1548cbb1235a2de09729e489da05004bc9ccb3905c0afe93ad72feb93e7dc90f8f1fe0d9104d73
   languageName: node
   linkType: hard
 
@@ -2503,13 +2503,6 @@ __metadata:
   version: 0.2.10
   resolution: "@eeacms/volto-resize-helper@npm:0.2.10"
   checksum: 8dd8c5dfb1628bd680dfb25ba1a567553f0a755801267d3f7c51e03c25980a7fa74610365f63228e9115ef28ee02e0a3e9155b853a34540fced746f830529475
-  languageName: node
-  linkType: hard
-
-"@eeacms/volto-sentry-rancher-config@npm:6.0.4":
-  version: 6.0.4
-  resolution: "@eeacms/volto-sentry-rancher-config@npm:6.0.4"
-  checksum: 7d473d586f980f2e89164b651cf8d279fce8fcdaa9b98a8c1d3db7f1af22a2569c077d23f57ca6174a9826f7e626cce2ec2994a2644ca19582b2bd280df9c291
   languageName: node
   linkType: hard
 
@@ -8620,7 +8613,7 @@ __metadata:
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
     "@eeacms/volto-eea-chatbot": 4.1.6
-    "@eeacms/volto-eea-kitkat": 34.0.2
+    "@eeacms/volto-eea-kitkat": 34.0.3
     "@eeacms/volto-sentry-rancher-config": 6.0.5
     "@eeacms/volto-tabs-block": ^5.1.0
     "@plone/scripts": ^3.3.2
