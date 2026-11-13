@@ -2250,14 +2250,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eeacms/volto-eea-chatbot@npm:4.1.6":
-  version: 4.1.6
-  resolution: "@eeacms/volto-eea-chatbot@npm:4.1.6"
+"@eeacms/volto-eea-chatbot@npm:4.1.7":
+  version: 4.1.7
+  resolution: "@eeacms/volto-eea-chatbot@npm:4.1.7"
   dependencies:
     "@eeacms/volto-design-tokens": "*"
     "@eeacms/volto-matomo": "*"
     "@microsoft/fetch-event-source": 2.0.1
-    "@plone-collective/volto-sentry": "*"
+    "@sentry/browser": 7.15.0
     compromise: 14.14.5
     fast-json-patch: 3.1.1
     highlight.js: 11.10.0
@@ -2269,7 +2269,7 @@ __metadata:
     rehype-prism-plus: 1.6.0
     remark-gfm: 3.0.1
     uuid: 10.0.0
-  checksum: 7f26b4a0ab791a2925e6195163774ca571e272c76c93ba57798932792ab5b8f344dea9ebf83f9562a55f717432e7b4b1ddf5b9363e05084abf4feffa7de6b98c
+  checksum: 91ae27c91822dd84db60703656053feb12634ad4efdd1e77af90dbd88e36f6e88b0d3aadc15689e299e6196acf1aa53c09136e0e33753ee4791bdef6c7d785fd
   languageName: node
   linkType: hard
 
@@ -4093,18 +4093,6 @@ __metadata:
   version: 0.1.2
   resolution: "@pkgr/core@npm:0.1.2"
   checksum: 5160ec9f2e3232da681824a42583ef80e637ae6143339bd1db176848efd244dd71d177ccb7fd729261d8dcaf88486ce701d39500d873ed5caf16e8c281e9e28a
-  languageName: node
-  linkType: hard
-
-"@plone-collective/volto-sentry@npm:*":
-  version: 0.4.0
-  resolution: "@plone-collective/volto-sentry@npm:0.4.0"
-  dependencies:
-    "@sentry/browser": 7.15.0
-    "@sentry/integrations": 7.15.0
-    "@sentry/node": 7.15.0
-    "@sentry/webpack-plugin": 1.19.1
-  checksum: db8660ac3a82320d917222e940842479f2aa2945f3e6b8614d40fc12f96b5b4eb997fb4ab92ab7087492ec0cbb653b65fd2ee0f6f37d39ad5125e9c37c233c49
   languageName: node
   linkType: hard
 
@@ -8612,7 +8600,7 @@ __metadata:
     "@eeacms/volto-arcgis-block": 0.1.485
     "@eeacms/volto-clms-theme": "github:eea/volto-clms-theme#ask_copernicus"
     "@eeacms/volto-clms-utils": 0.1.15
-    "@eeacms/volto-eea-chatbot": 4.1.6
+    "@eeacms/volto-eea-chatbot": 4.1.7
     "@eeacms/volto-eea-kitkat": 34.0.4
     "@eeacms/volto-sentry-rancher-config": 6.0.5
     "@eeacms/volto-tabs-block": ^5.1.0
